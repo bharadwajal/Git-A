@@ -1,8 +1,8 @@
 node {
        maintainer_name = "bj"
        container_name = "apache"
-       build_tag = A
-stage 'Clone' 
+       build_tag = "A"
+stage 'clone' 
       git url: 'https://github.com/bharadwajal/Git-A.git'
 //stage 'Test' 
  //     sh "mvn clean test" 
