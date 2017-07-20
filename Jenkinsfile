@@ -12,5 +12,7 @@ stage 'Build Image'
       echo "Building docker.build(${maintainer_name}/${container_name}:${build_tag})"
       container = docker.build("${maintainer_name}/${container_name}:${build_tag}")
 stage 'Running container'
-      docker.image("${maintainer_name}/${container_name}:${build_tag}").withRun("--name=${container_name}")
+      docker.image("${maintainer_name}/${container_name}:${build_tag}").withRun("--name=${container_name}") { c ->
+  echo "Docker Container is running"
+      }
 }
