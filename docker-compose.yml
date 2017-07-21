@@ -7,6 +7,9 @@ services:
     ports:
       - 5000:99
 
-    environment:
-      WORDPRESS_DB_PASSWORD: abc123
-
+     environment:
+       WORDPRESS_DB_PASSWORD: abc123
+  mysql:
+     image: mysql:latest
+     environment:
+       MYSQL_ROOT_PASSWORD: abc123
