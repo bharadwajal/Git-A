@@ -11,5 +11,5 @@ services:
     image: mysql:latest
     environment:
       MYSQL_ROOT_PASSWORD: abc123
-  composetestdb:
+  
     tty: true
